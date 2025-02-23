@@ -1,10 +1,13 @@
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');          // Import UTC plugin
-const timezone = require('dayjs/plugin/timezone');  // Import timezone plugin
+import dayjs from 'dayjs'; 
+import utc from 'dayjs/plugin/utc';
+import timezone from 'dayjs/plugin/timezone';
+import MicroModal from 'micromodal';
+
+// Extend dayjs with plugins
 dayjs.extend(utc);        // Extend with UTC first
 dayjs.extend(timezone);   // Then extend with timezone
-import MicroModal from 'micromodal';  // es6 module
-MicroModal.init();
+// Initialize MicroModal
+MicroModal.init();  
 
 // Automatically detect the visitor's timezone
 var userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -19,10 +22,10 @@ function updateTime() {
   }
 
 // Handle timezone selection
-document.getElementById("timezone-select").addEventListener("change", function() {userTimezone = this.value;});
+document.getElementById("timezone-select").addEventListener("change", () => {userTimezone = this.value;});
 
 // Handle the Apply button click
-document.getElementById("timezone-select-btn").addEventListener("click", function() {updateTime();});
+document.getElementById("timezone-select-btn").addEventListener("click", () => {updateTime();});
 
 
 

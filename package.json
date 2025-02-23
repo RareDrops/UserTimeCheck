@@ -19,7 +19,6 @@
   "description": "",
   "dependencies": {
     "dayjs": "^1.11.13",
-    "express": "^4.21.2",
     "micromodal": "^0.4.10"
   },
   "devDependencies": {
