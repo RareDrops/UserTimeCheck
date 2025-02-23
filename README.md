@@ -1,6 +1,6 @@
 # UserTimeCheck
 
-UserTimeCheck is a simple webpage that shows the current time of the user. It uses Day.js to get the time, date, and timezone information. The user can also change the timezone using a modal with a dropdown selection.
+UserTimeCheck is a simple webpage that shows the current time of the user. It uses [Day.js](https://day.js.org/) to get the time, date, and timezone information. The user can also change the timezone using a modal with a dropdown selection.
 
 ## Features
 
@@ -35,10 +35,11 @@ npm install
 1. Start the server:
 
 ```bash
-npm start
+npm install -g live-server
+live-server
 ```
 
-2. Open your browser and navigate to `http://localhost:8090`.
+2. Open your browser and navigate to `http://localhost:8090` or whatever the server is serving at.
 
 ## Dependencies
 
@@ -52,8 +53,7 @@ npm start
 - [Webpack CLI](https://webpack.js.org/api/cli/) - Command line interface for Webpack.
 
 ## Scripts
-
-- `npm start`: Starts the server.
+- `live-server`: Runs the server.
 - `npm run build`: Builds the project using Webpack.
 
 ## License
