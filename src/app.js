@@ -22,10 +22,10 @@ function updateTime() {
   }
 
 // Handle timezone selection
-document.getElementById("timezone-select").addEventListener("change", () => {userTimezone = this.value;});
+document.getElementById("timezone-select").addEventListener("change", function() {userTimezone = this.value;});
 
 // Handle the Apply button click
-document.getElementById("timezone-select-btn").addEventListener("click", () => {updateTime();});
+document.getElementById("timezone-select-btn").addEventListener("click", ()=> {updateTime();});
 
 
 
