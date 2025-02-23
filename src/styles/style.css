@@ -34,7 +34,7 @@ section {
   width: 50%;
   border: 5px solid;
   border-radius: 10px;
-  background-color: var(--primary-background-color);
+  background-color: #f5f0e7;
 }
 
 .centered-content {
@@ -56,6 +56,10 @@ section {
 
 .inline {
   display: inline;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 .text-span-1 {

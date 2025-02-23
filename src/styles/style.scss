@@ -9,6 +9,7 @@ html {
 // Variables
 :root {
     --primary-font-family: 'Sour Gummy', serif;
+    --primary-background-color: #f5f0e7;
 }
 
 body {
@@ -60,6 +61,9 @@ section {
     display: inline;
 }
 
+.text-align-left {
+    text-align: left;
+}
 
 // Define a map for the predefined properties
 $text-spans: (

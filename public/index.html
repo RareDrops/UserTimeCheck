@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../src/styles/style.css">
 	<link rel="stylesheet" href="../src/styles/micromodal.css">
 	<link rel="stylesheet" href="../src/styles/select_style.css">
+	<link rel="stylesheet" href="../src/styles/button_style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,24 +22,36 @@
 						Pacific/Auckland
 					</div>
 						<button data-micromodal-trigger="modal-1"><i class="fa-regular fa-pen-to-square"></i></button>
-						<div id="modal-1" aria-hidden="true" class="modal micromodal-slide">
+						<div id="modal-1" aria-hidden="true" class="modal micromodal-slide text-align-left"> 
 							<div tabindex="-1" data-micromodal-close class="modal__overlay" aria-hidden="true">
 							<div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal__container">
+
 								<header class="modal__header">
-								<h2 id="modal-1-title" class="modal__title">
+								<h2 id="modal-1-title" class="">
 									Change Timezone
 								</h2>
 								</header>
 						
 								<div id="modal-1-content" class="modal__content inline">
 									<select id = "timezone-select" class = "select">
-										<option value="Pacific/Auckland">Pacific/Auckland</option>
-										<option value="Europe/London">Europe/London</option>
 										<option value="America/New_York">America/New York</option>
+										<option value="America/Los_Angeles">America/Los Angeles</option>
+										<option value="America/Vancouver">America/Vancouver</option>
+										<option value="Asia/Manila">Asia/Manila</option>
+										<option value="Asia/Singapore">Asia/Singapore</option>
+										<option value="Asia/Ho_Chi_Minh">Asia/Ho Chi Minh</option>
+										<option value="Asia/Tokyo">Asia/Tokyo</option>
+										<option value="Australia/Adelaide">Australia/Adelaide</option>
+										<option value="Australia/Sydney">Australia/Sydney</option>
+										<option value="Europe/London">Europe/London</option>
+										<option value="Europe/Berlin">Europe/Berlin</option>
+										<option value="Europe/Paris">Europe/Paris</option>
+										<option value="Pacific/Auckland">Pacific/Auckland</option>
 									</select>
 								</div>
+
 								<footer class="modal__footer inline">
-									<button id = "timezone-select-btn" class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Apply</button>
+									<button id = "timezone-select-btn" class="modal__btn button-no-style" data-micromodal-close aria-label="Close this dialog window">Apply</button>
 								</footer>
 							</div>
 							</div>

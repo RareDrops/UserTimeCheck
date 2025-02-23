@@ -1,0 +1,11 @@
+.button-no-style {
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    color: inherit; /* Inherit text color */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    cursor: pointer; /* Set cursor to pointer */
+    font: inherit; /* Inherit font properties */
+    width: auto; /* Set width to auto */
+}
