@@ -104,17 +104,18 @@ section {
   .frame {
     width: 355px;
   }
-}
-@media screen and (max-width: 430px) {
   .modal__container {
     padding: 5px;
     padding-bottom: 10px;
+    width: 80%;
   }
+}
+@media screen and (max-width: 430px) {
   .modal__btn {
     margin-top: 10px;
   }
   .text-span-4 {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-height: 340px) {
