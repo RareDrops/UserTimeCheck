@@ -58,7 +58,7 @@ live-server
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/RareDrops/UserTimeCheck/blob/master/LICENSE).
 
 ## Author
 
