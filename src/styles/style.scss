@@ -10,6 +10,7 @@ html {
 :root {
     --primary-font-family: 'Sour Gummy', serif;
     --primary-background-color: #f5f0e7;
+    --color-grey-0: #00000081;
 }
 
 body {
@@ -47,8 +48,12 @@ section {
     text-align: right;
 }
 
-.small-margin-1 {
+.small-right-margin-1 {
     margin-right: 10%;
+}
+
+.single-character-right-margin-1 {
+    margin-right: 1ch;
 }
 
 
@@ -69,7 +74,7 @@ section {
 $text-spans: (
   "text-span-1": (font-size: 3.2rem, line-height: 4.5rem, color: #0a5029, font-weight: 600),
   "text-span-2": (font-size: 5rem, font-weight: 600),
-  "text-span-3": (font-size: 14px, font-family: var(--font-family-secondary), color: var(--color-black-1), font-weight: 400),
+  "text-span-3": (color: var(--color-grey-0), font-weight: 400),
   "text-span-4": (font-size: 22px, font-family: var(--font-family-secondary), color: var(--color-black-1), font-weight: 500),
   "text-span-5": (font-size: 2.0rem, color: var(--color-grey-0), font-weight: 500),
   "text-span-6": (font-size: 2.3rem, color: var(--color-dark-lime-green), font-weight: 600),

@@ -9,6 +9,7 @@ html {
 :root {
   --primary-font-family: "Sour Gummy", serif;
   --primary-background-color: #f5f0e7;
+  --color-grey-0: #00000081;
 }
 
 body {
@@ -45,8 +46,12 @@ section {
   text-align: right;
 }
 
-.small-margin-1 {
+.small-right-margin-1 {
   margin-right: 10%;
+}
+
+.single-character-right-margin-1 {
+  margin-right: 1ch;
 }
 
 .time-display {
@@ -75,9 +80,7 @@ section {
 }
 
 .text-span-3 {
-  font-size: 14px;
-  font-family: var(--font-family-secondary);
-  color: var(--color-black-1);
+  color: var(--color-grey-0);
   font-weight: 400;
 }
 
