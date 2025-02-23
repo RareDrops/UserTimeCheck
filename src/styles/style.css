@@ -85,10 +85,7 @@ section {
 }
 
 .text-span-4 {
-  font-size: 22px;
-  font-family: var(--font-family-secondary);
-  color: var(--color-black-1);
-  font-weight: 500;
+  font-size: 1rem;
 }
 
 .text-span-5 {
@@ -108,7 +105,19 @@ section {
     width: 355px;
   }
 }
-@media screen and (max-height: 330px) {
+@media screen and (max-width: 430px) {
+  .modal__container {
+    padding: 5px;
+    height: 35%;
+  }
+  .modal__btn {
+    margin-top: 10px;
+  }
+  .text-span-4 {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-height: 340px) {
   .frame {
     height: 165px;
   }
