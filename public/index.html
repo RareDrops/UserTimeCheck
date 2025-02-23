@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>UserTimeCheck</title>
+	<title>Time Checker</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Time Checker">
+	<meta name="description" content="A simple webpage that shows the current time of user. Powered by Day.js to get the time, date, and TZ info.">
+	<meta property="og:description" content="A simple webpage that shows the current time of user. Powered by Day.js to get the time, date, and TZ info.">
+	<meta property="og:type" content="website">
+	<meta name="og:card" content="summary_large_image">
+	<meta property="twitter:title" content="Time Checker">
+	<meta property="twitter:description" content="A simple webpage that shows the current time of user. Powered by Day.js to get the time, date, and TZ info.">
 	<link rel="stylesheet" href="../src/styles/micromodal.css">
 	<link rel="stylesheet" href="../src/styles/select_style.css">
 	<link rel="stylesheet" href="../src/styles/button_style.css">
@@ -34,19 +41,7 @@
 						
 								<div id="modal-1-content" class="modal__content inline">
 									<select id = "timezone-select" class = "select text-span-4">
-										<option value="America/New_York">America/New York</option>
-										<option value="America/Los_Angeles">America/Los Angeles</option>
-										<option value="America/Vancouver">America/Vancouver</option>
-										<option value="Asia/Manila">Asia/Manila</option>
-										<option value="Asia/Singapore">Asia/Singapore</option>
-										<option value="Asia/Ho_Chi_Minh">Asia/Ho Chi Minh</option>
-										<option value="Asia/Tokyo">Asia/Tokyo</option>
-										<option value="Australia/Adelaide">Australia/Adelaide</option>
-										<option value="Australia/Sydney">Australia/Sydney</option>
-										<option value="Europe/London">Europe/London</option>
-										<option value="Europe/Berlin">Europe/Berlin</option>
-										<option value="Europe/Paris">Europe/Paris</option>
-										<option value="Pacific/Auckland">Pacific/Auckland</option>
+										PLACEHOLDER
 									</select>
 								</div>
 
@@ -66,6 +61,7 @@
 			</div>
 		</div>
 	</section>
+	<script src="script.js"></script>
 	<script src="../dist/main.js"></script>
 </body>
 </html>
