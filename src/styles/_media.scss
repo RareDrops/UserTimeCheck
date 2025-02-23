@@ -1,0 +1,11 @@
+@media screen and (max-width: 710px) {
+	.frame {
+		width: calc(710px / 2);
+	}
+}
+
+@media screen and (max-height: 330px) {
+	.frame {
+		height: calc(330px / 2);
+	}
+}

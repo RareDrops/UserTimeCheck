@@ -5,21 +5,46 @@
 	<title>UserTimeCheck</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../src/styles/style.css">
+	<link rel="stylesheet" href="../src/styles/micromodal.css">
+	<link rel="stylesheet" href="../src/styles/select_style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<section>
 		<div class = "frame">
-			<div class = "centered-content">
-				<div id = "user-timezone" class = "">
-					Europe/London
-					<div id = "modal" class = "">
-					
+			<div class = "centered-content small-margin-1">
+				<div class = "inline-container">
+					<div id = "user-timezone" class = "inline">
+						Pacific/Auckland
 					</div>
+						<button data-micromodal-trigger="modal-1"><i class="fa-regular fa-pen-to-square"></i></button>
+						<div id="modal-1" aria-hidden="true" class="modal micromodal-slide">
+							<div tabindex="-1" data-micromodal-close class="modal__overlay" aria-hidden="true">
+							<div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal__container">
+								<header class="modal__header">
+								<h2 id="modal-1-title" class="modal__title">
+									Change Timezone
+								</h2>
+								</header>
+						
+								<div id="modal-1-content" class="modal__content inline">
+									<select id = "timezone-select" class = "select">
+										<option value="Pacific/Auckland">Pacific/Auckland</option>
+										<option value="Europe/London">Europe/London</option>
+										<option value="America/New_York">America/New York</option>
+									</select>
+								</div>
+								<footer class="modal__footer inline">
+									<button id = "timezone-select-btn" class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Apply</button>
+								</footer>
+							</div>
+							</div>
+						</div>
 				</div>
-				<div id = "current-time" class = "text-span-2">
+				<div id = "current-time" class = "text-span-2 time-display">
 					10:00:00
 				</div>
 				<div id = "current-date" class = "">
@@ -28,7 +53,6 @@
 			</div>
 		</div>
 	</section>
-
 	<script src="../dist/main.js"></script>
 </body>
 </html>
