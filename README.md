@@ -1,6 +1,7 @@
 # UserTimeCheck
+![demo.gif](https://raw.githubusercontent.com/RareDrops/UserTimeCheck/refs/heads/master/.github/images/demo.gif)
 
-UserTimeCheck is a simple webpage that shows the current time of the user. It uses [Day.js](https://day.js.org/) to get the time, date, and timezone information. The user can also change the timezone using a modal with a dropdown selection.
+**UserTimeCheck** is a simple webpage that shows the current time of the user. It uses [Day.js](https://day.js.org/) to get the time, date, and timezone information. The user can also change the timezone using a modal with a dropdown selection.
 
 ## Features
 
